@@ -1,6 +1,6 @@
 # 감정 판단 실습실
 
-**[실습 페이지 열기 →](https://eunsoo11.github.io/-----/)** · 설치 없이 브라우저에서 사용할 수 있습니다.
+**[실습 페이지 열기 →](https://eunsoo11.github.io/emotion-appraisal-lab/)** · 설치 없이 브라우저에서 사용할 수 있습니다.
 
 **스토리라인 예시를 따라가고, 평가 요소를 직접 바꾸면서 감정 후보가 어떻게 갱신되는지 확인하는 도구**입니다.
 
@@ -72,10 +72,10 @@
 
 GitHub Pages 배포가 완료되었습니다. 아래 링크에서 스토리를 따라가거나 평가 요소를 직접 바꿀 수 있습니다.
 
-- [메인 실습 화면](https://eunsoo11.github.io/-----/)
-- [Anger–Frustration 스토리](https://eunsoo11.github.io/-----/?scenario=anger-frustration&mode=story)
-- [Fear–Sadness 스토리](https://eunsoo11.github.io/-----/?scenario=fear-sadness&mode=story)
-- [Fear–Surprise 스토리](https://eunsoo11.github.io/-----/?scenario=fear-surprise&mode=story)
+- [메인 실습 화면](https://eunsoo11.github.io/emotion-appraisal-lab/)
+- [Anger–Frustration 스토리](https://eunsoo11.github.io/emotion-appraisal-lab/?scenario=anger-frustration&mode=story)
+- [Fear–Sadness 스토리](https://eunsoo11.github.io/emotion-appraisal-lab/?scenario=fear-sadness&mode=story)
+- [Fear–Surprise 스토리](https://eunsoo11.github.io/emotion-appraisal-lab/?scenario=fear-surprise&mode=story)
 
 GitHub README 본문에서는 `iframe`과 JavaScript 기반 실습을 실행할 수 없어, README의 예시에서 별도 실습 화면으로 연결합니다. 참고: [GitHub Markdown의 제한](https://github.github.com/gfm/#disallowed-raw-html-extension-), [GitHub Pages 공식 설정 안내](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
