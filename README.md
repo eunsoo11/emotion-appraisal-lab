@@ -1,5 +1,7 @@
 # 감정 판단 실습실
 
+**[실습 페이지 열기 →](https://eunsoo11.github.io/-----/)** · 설치 없이 브라우저에서 사용할 수 있습니다.
+
 **스토리라인 예시를 따라가고, 평가 요소를 직접 바꾸면서 감정 후보가 어떻게 갱신되는지 확인하는 도구**입니다.
 
 메인 화면에는 세 가지 예시와 `스토리 따라가기` / `직접 실습` 버튼이 있습니다. 실습에서는 감정과 평가 요소를 노드와 선으로 표시하고, 공유 근거를 연결된 모든 감정에 동시에 반영합니다.
@@ -66,22 +68,14 @@
 2. 압축을 풀고 `index.html`을 브라우저에서 엽니다. 설치·빌드·API 키는 필요하지 않습니다.
 3. 메인 화면에서 원하는 예시의 **스토리 따라가기** 또는 **직접 실습**을 누릅니다.
 
-### 웹 주소로 열기 — GitHub Pages 설정 후
+### 웹에서 바로 실습하기
 
-**현재 코드 추가 시점에는 GitHub Pages가 활성화되지 않았습니다.** 아래 주소는 Pages를 설정한 뒤 사용할 주소입니다.
+GitHub Pages 배포가 완료되었습니다. 아래 링크에서 스토리를 따라가거나 평가 요소를 직접 바꿀 수 있습니다.
 
 - [메인 실습 화면](https://eunsoo11.github.io/-----/)
 - [Anger–Frustration 스토리](https://eunsoo11.github.io/-----/?scenario=anger-frustration&mode=story)
 - [Fear–Sadness 스토리](https://eunsoo11.github.io/-----/?scenario=fear-sadness&mode=story)
 - [Fear–Surprise 스토리](https://eunsoo11.github.io/-----/?scenario=fear-surprise&mode=story)
-
-저장소의 **Settings → Pages → Build and deployment**에서 다음을 선택한 뒤 저장합니다.
-
-| 설정 | 선택 |
-| --- | --- |
-| Source | Deploy from a branch |
-| Branch | main |
-| Folder | / (root) |
 
 GitHub README 본문에서는 `iframe`과 JavaScript 기반 실습을 실행할 수 없어, README의 예시에서 별도 실습 화면으로 연결합니다. 참고: [GitHub Markdown의 제한](https://github.github.com/gfm/#disallowed-raw-html-extension-), [GitHub Pages 공식 설정 안내](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
