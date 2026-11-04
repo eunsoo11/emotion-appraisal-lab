@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="공유 평가 요소를 확인하며 감정 후보를 갱신하는 스토리라인과 직접 실습 도구">
+  <title>감정 판단 실습실</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/data.js"></script>
+  <script defer src="assets/engine.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <main id="emotion-lab">
+    <header class="page-header">
+      <div><p class="eyebrow">EMOTION APPRAISAL LAB</p><h1>감정 판단 실습실</h1><p class="intro">근거를 확인하고, 연결된 감정 후보를 다시 검토합니다.</p></div>
+      <a class="repo-link" href="https://github.com/eunsoo11/-----">README 보기 ↗</a>
+    </header>
+    <section class="gallery-section" aria-labelledby="gallery-title">
+      <div class="gallery-heading"><h2 id="gallery-title">스토리라인으로 시작하기</h2><p class="small secondary">예시를 따라간 뒤, 같은 근거를 직접 바꿔 보세요.</p></div>
+      <div id="scenario-gallery" class="scenario-gallery"></div>
+    </section>
+    <section class="setup" id="lab-workspace" aria-label="예시와 실습 방식 선택">
+      <label class="field">스토리라인 예시<select id="scenario-select"></select></label>
+      <div class="mode-switch" role="group" aria-label="사용 방식">
+        <button id="mode-story" type="button" aria-pressed="false">스토리 따라가기</button>
+        <button id="mode-practice" type="button" aria-pressed="true">직접 실습</button>
+      </div>
+    </section>
+    <section class="scenario-panel" aria-labelledby="scenario-title">
+      <div class="scenario-heading"><h2 id="scenario-title"></h2><span id="scenario-subtitle"></span></div>
+      <div id="dialogue" class="dialogue"></div>
+      <p id="input-note" class="secondary small"></p>
+    </section>
+    <section class="review-panel" aria-label="평가 진행">
+      <div id="story-controls" class="toolbar" hidden>
+        <button id="prev-step" type="button">이전 단계</button><span id="step-number" class="step-number"></span><button id="next-step" class="primary" type="button">다음 단계</button>
+      </div>
+      <div id="practice-controls" class="toolbar">
+        <label class="inline-field">초기 후보<select id="initial-select"></select></label>
+        <button id="reset-example" type="button">예시 상태로 복원</button><button id="clear-evidence" type="button">근거 비우기</button>
+      </div>
+      <div class="stage-info" aria-live="polite"><h2 id="stage-title"></h2><p id="stage-text"></p></div>
+      <div class="candidate-bar"><span>현재 후보 <strong id="current-candidate"></strong></span><button id="move-candidate" class="primary" type="button" disabled>최상위 후보로 이동</button></div>
+      <div id="ranking" class="small" aria-live="polite"></div>
+      <div id="history" class="small secondary"></div>
+    </section>
+    <section class="graph-section" aria-labelledby="graph-title">
+      <div class="graph-heading"><div><h2 id="graph-title">감정과 공유 평가 요소</h2><p id="comparison-detail" class="small secondary"></p></div>
+        <div class="graph-options"><label class="inline-field">비교 감정<select id="partner-select"></select></label><label class="checkbox-field"><input id="show-all" type="checkbox">전체 29개 보기</label></div>
+      </div>
+      <div class="graph-labels small"><span id="factor-instruction">평가 요소 · 클릭하여 상태 변경</span><span>감정 · 클릭하여 연결 보기</span></div>
+      <div class="network" id="network" role="group" aria-label="평가 요소와 감정 후보의 연결 그래프">
+        <svg id="connections" aria-hidden="true"></svg><div id="factors" class="factor-column"></div><div id="emotions" class="emotion-column"></div>
+      </div>
+      <div class="legend small"><span><i data-value="1"></i>해당</span><span><i data-value="0"></i>비해당</span><span><i data-value="unknown"></i>미확인</span><span>공통 요소는 연결된 모든 감정에 반영됩니다.</span></div>
+      <div class="next-check"><h3>두 후보를 구분하려면</h3><p id="next-checks"></p></div>
+    </section>
+    <footer>
+      <p><strong>이 점수는 ‘해당 항목 수’ 예시입니다.</strong> 공통된 요소만 확인해 동률이면 후보를 이동하지 않습니다. 실제 감정 판정 점수는 별도로 설계·검증해야 합니다.</p>
+      <p class="small secondary">미확인에는 아직 검토하지 않은 경우와 근거가 부족한 경우가 포함됩니다. 비해당은 별도로 집계하며 점수에서 빼지 않습니다. Excitement·Neutral·Other는 이 체크리스트에 독립 조건이 없어 점수 순위에 넣지 않습니다. 이 화면은 실제 분류 모델을 실행하지 않습니다.</p>
+    </footer>
+    <noscript>이 실습에는 JavaScript가 필요합니다. 브라우저에서 JavaScript를 허용한 후 다시 여세요.</noscript>
+  </main>
+</body>
+</html>
